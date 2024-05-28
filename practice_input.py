@@ -1,44 +1,55 @@
 """
-A little assignment to practice printing text 
-output to the Python command line.
+A little assignment to practice receiving text input from the user in Python programming.
 Do not run this file... run main.py instead.
 """
 
 
-def print_with_line_break():
+def get_favorite_vegetable():
     """
-    Prints out the text, 'Hello world!' with a line break at the end
+    Asks the user to enter their favorite vegetable
+    and then prints out, "Interesting! I also love X!",
+    where X is replaced with the user's favorite vegetable.
     """
-    # write your code here
-    print("Hello world!")
+    # write your code here.
 
-def print_without_line_break():
-    """
-    Prints out the text, 'Hello world!' without a line break at the end
-    """
-    # write your code here
-    print("Hello world!", end='')
-
-def print_with_separator_dash_and_with_line_break():
-    """
-    Prints out the following words, with dashes "-" between them
-    and a line break at the end:
-    "Twas", "brillig", "and", "the", "slithy", "toves"
-    """
-    # write your code here
-    # you must supply each word as a separate argument to the print() function
-    print("Twas","brillig", "and", "the", "slithy","toves", sep="-")
+    veg = input("what is your favorite vegetable? ")
+    print("Interesting! I also love " + veg +"!")
 
 
-def print_with_separator_dash_and_without_line_break():
+def get_favorite_number():
     """
-    Prints out the following words, with dashes "-" between them
-    and without a line break at the end:
-    "Twas", "brillig", "and", "the", "slithy", "toves"
+    Asks the user to enter their favorite number
+    and then prints out, "Interesting! I also love X!",
+    where X is replaced with the user's favorite number.
     """
-    # write your code here
-    # you must supply each word as a separate argument to the print() function
-    print("Twas","brillig", "and", "the", "slithy","toves", sep="-", end="")
+    # write your code here.
+    num = input ("what is your favorite number? ")
+    print("Interesting! I also love "+ num + "!",)
 
+
+def get_name_and_zodiac_sign():
+    """
+    Asks the user to enter their name.
+    Then ask them to enter their zodiac sign.
+    Then print out, "Interesting! My name is also X, and I'm also a Y!",
+    where X and Y are replaced by the user's name and zodiac sign, respectively.
+    """
+    # write your code here.
+    name = input("What is your name? ")
+    zodiac = input("What is your zodiac sign? ")
+    print("Interesting! My name is also " + name + ", and I'm also a "+zodiac+ "!")
+
+
+def get_name_and_age():
+    """
+    Asks the user to enter their name.
+    Then ask them to enter their age.
+    Then print out, "Interesting! My name is also X, and I'm also Y years old!",
+    where X and Y are replaced by the user's name and age, respectively.
+    """
+    # write your code here.
+    name = input("What is your name? ")
+    age = input("What is your age? ")
+    print("Interesting! My name is also " + name +", and I'm also " + age + " years old!")
 
     
