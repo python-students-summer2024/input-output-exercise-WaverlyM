@@ -1,42 +1,44 @@
 """
-A little assignment to practice receiving text input from the user in Python programming.
+A little assignment to practice printing text 
+output to the Python command line.
 Do not run this file... run main.py instead.
 """
 
 
-def get_favorite_vegetable():
+def print_with_line_break():
     """
-    Asks the user to enter their favorite vegetable
-    and then prints out, "Interesting! I also love X!",
-    where X is replaced with the user's favorite vegetable.
+    Prints out the text, 'Hello world!' with a line break at the end
     """
-    # write your code here.
+    # write your code here
+    print("Hello world!")
+
+def print_without_line_break():
+    """
+    Prints out the text, 'Hello world!' without a line break at the end
+    """
+    # write your code here
+    print("Hello world!", end='')
+
+def print_with_separator_dash_and_with_line_break():
+    """
+    Prints out the following words, with dashes "-" between them
+    and a line break at the end:
+    "Twas", "brillig", "and", "the", "slithy", "toves"
+    """
+    # write your code here
+    # you must supply each word as a separate argument to the print() function
+    print("Twas","brillig", "and", "the", "slithy","toves", sep="-")
 
 
-def get_favorite_number():
+def print_with_separator_dash_and_without_line_break():
     """
-    Asks the user to enter their favorite number
-    and then prints out, "Interesting! I also love X!",
-    where X is replaced with the user's favorite number.
+    Prints out the following words, with dashes "-" between them
+    and without a line break at the end:
+    "Twas", "brillig", "and", "the", "slithy", "toves"
     """
-    # write your code here.
+    # write your code here
+    # you must supply each word as a separate argument to the print() function
+    print("Twas","brillig", "and", "the", "slithy","toves", sep="-", end="")
 
 
-def get_name_and_zodiac_sign():
-    """
-    Asks the user to enter their name.
-    Then ask them to enter their zodiac sign.
-    Then print out, "Interesting! My name is also X, and I'm also a Y!",
-    where X and Y are replaced by the user's name and zodiac sign, respectively.
-    """
-    # write your code here.
-
-
-def get_name_and_age():
-    """
-    Asks the user to enter their name.
-    Then ask them to enter their age.
-    Then print out, "Interesting! My name is also X, and I'm also Y years old!",
-    where X and Y are replaced by the user's name and age, respectively.
-    """
-    # write your code here.
+    
